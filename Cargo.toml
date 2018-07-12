@@ -13,7 +13,7 @@ categories = ["asynchronous", "hardware-support"]
 
 [dependencies]
 mio = "0.6"
-serialport = "2.3"
+serialport = { git = "https://gitlab.com/xoac/serialport-rs", branch="musl_2_3_1" }
 
 [target.'cfg(unix)'.dependencies]
 nix = "0.10"
